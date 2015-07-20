@@ -1,0 +1,14 @@
+go-hotscore: golang implementation of wilson score, reddit & hackernews
+scoring algorithm. straight up clone of github.com/clux/decay
+
+go get github.com/dvliman/go-hotscore
+
+import "github.com/dvliman/go-hotscore"
+
+API
+    hotscore.Wilson(ups, downs int)
+    hotscore.Reddit(ups, downs int)
+    hotscore.Hacker(ups, downs int)
+
+how do I change the confidence value?
+    go ahead modify the source code. It is in the function
