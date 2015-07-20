@@ -6,9 +6,10 @@ go get github.com/dvliman/go-hotscore
 import "github.com/dvliman/go-hotscore"
 
 API
-    hotscore.Wilson(ups, downs int)
-    hotscore.Reddit(ups, downs int)
-    hotscore.Hacker(ups, downs int)
+    hotscore.Wilson(ups, downs int) float64
+    hotscore.Reddit(ups int, downs int, date time.Time) float64
+    hotscore.Hacker(votes int, date time.Time) float64
+    where date is usually time.Now()
 
 how do I change the confidence value?
     go ahead modify the source code. It is in the function
